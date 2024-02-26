@@ -10,4 +10,5 @@
 
 
 ## 其它
-去年万老师的教学幻灯片, 供参考
+- 去年万老师的教学幻灯片 + 教材 PDF, 供参考.
+[阿里云盘链接](https://www.alipan.com/s/FiWZEDqBxQy)
