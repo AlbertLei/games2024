@@ -9,22 +9,14 @@
 <body>
   <!-- raw HTML omitted -->
 <!-- raw HTML omitted -->
-<p><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
 <h1 id="博弈论-第一章"><strong>博弈论: 第一章</strong></h1>
 <h2 id="授课教师-雷浩然">授课教师: <strong>雷浩然</strong></h2>
 <h2 id="湖南大学课程">湖南大学课程</h2>
 <hr>
 <h1 id="课程互动">课程互动</h1>
-<ul>
-<li>QQ 群: 821669202 (<strong>非必须</strong>)
-<ul>
-<li>教师会不定期在 QQ 群发布重要课程信息 (如考试安排, 作业等)</li>
-<li>这些信息也会在课堂上讲. 如果你每堂课都来, 且课上能保持清醒, QQ 群对你的边际效用为零.</li>
-</ul>
-</li>
-</ul>
-<hr>
-<h1 id="课程互动-1">课程互动</h1>
 <ul>
 <li>
 <p>QQ 群: 821669202 (非必须)</p>
@@ -35,6 +27,167 @@
 </li>
 <li>
 <p>课程网站 (<strong>必须, 非常重要</strong>)</p>
+<ul>
+<li><a href="https://albertlei.github.io/games2024/">https://albertlei.github.io/games2024/</a></li>
+<li>上传课程资料和重要课程信息</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h1 id="授课教师介绍">授课教师介绍</h1>
+<ul>
+<li>雷浩然, 湖南大学数字经济系, 助理教授</li>
+<li>研究领域: 信息经济学, 机制设计, 微观经济理论</li>
+<li>联络方式:   <a href="mailto:haoranlei@foxmail.com">haoranlei@foxmail.com</a>
+<ul>
+<li>发送邮件时, 请在邮件标题备注&quot;博弈论&quot;</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h1 id="课程分数">课程分数</h1>
+<ul>
+<li>期中考试 + 期末考试</li>
+<li>平时成绩 (作业, 课程实验等)</li>
+</ul>
+<hr>
+<h1 id="课程分数-1">课程分数</h1>
+<ul>
+<li>期中考试 + 期末考试</li>
+<li>平时成绩 (作业, 课程实验等)</li>
+</ul>
+<p>我非常重视课程互动.</p>
+<ul>
+<li>根据最基本的微观经济学原理, 我需要给予你们<strong>适当的激励</strong></li>
+<li><strong>主动提问的同学有额外课程加分</strong>:
+<ul>
+<li>课上提问加 1 分</li>
+<li>课下提问加 0.5 分 (QQ 和邮件提问也算, <strong>考前答疑不算</strong>)</li>
+<li>最多加两分</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h1 id="上课要求">上课要求</h1>
+<ul>
+<li>
+<p>可以吃东西, 但不要吃味道太重的食物</p>
+</li>
+<li>
+<p>允许私下小声讨论, 但我更鼓励你直接举手问我. 有课堂加分!</p>
+</li>
+<li>
+<p><strong>不要使用电子产品(如手机或电脑)!</strong></p>
+<ul>
+<li>海量的教育经济学相关的文献和经验证据都表明, 上课使用电子产品只会导致大多数学生分心!</li>
+<li>我不用雨课堂</li>
+<li>我不点名, 这门课也没有&quot;考勤分&quot;</li>
+</ul>
+</li>
+</ul>
+<hr>
+<!-- raw HTML omitted -->
+<h1 id="什么是博弈论-game-theory">什么是博弈论 (Game Theory)?</h1>
+<hr>
+<h1 id="博弈的基本要素">博弈的基本要素</h1>
+<p>博弈有三个基本要素: <strong>参与人</strong>, <strong>行动</strong>和<strong>效用函数</strong> (或支付函数)</p>
+<p>下面我们以&quot;石头剪刀布&quot;博弈为例进行说明</p>
+<ul>
+<li><strong>参与人:</strong> 如张三和李四</li>
+<li><strong>行动:</strong> 张三的行动集合 $=$ 李四的行动集合 $=$ {石头,剪刀,布}
+将张三和李四的行动分别记为 $a_1$, $a_2$</li>
+<li><strong>效用函数:</strong> $u_{张三} (a_1, a_2)$, $u_{李四} (a_1, a_2)$
+获胜收益为 $1$, 失败收益为 $-1$, 平局收益为 $0$</li>
+</ul>
+<hr>
+<h1 id="完备信息-vs-不完备信息">完备信息 v.s. 不完备信息</h1>
+<p>石头剪刀布属于<strong>完备信息博弈</strong>.</p>
+<ul>
+<li>张三和李四同时出拳, 双方都没有<em>私人信息</em>.</li>
+<li>其它常见完备信息博弈: 象棋, 围棋, 飞行棋</li>
+</ul>
+<p><strong>不完备信息博弈:</strong> 部分(或全部)参与人存在<em>私人信息</em></p>
+<ul>
+<li>例子: 麻将, 斗地主, 德州扑克, 桥牌</li>
+</ul>
+<p><strong>问:</strong> 你觉得完备信息&quot;游戏&quot;和不完备信息&quot;游戏&quot;相比, 谁更好玩?</p>
+<hr>
+<h1 id="同时行动博弈-vs-序贯博弈">同时行动博弈 v.s. 序贯博弈</h1>
+<p>根据参与人是<strong>同时行动</strong>还是<strong>先后行动</strong>, 可以将博弈划分为<em>同时行动博弈</em>和<em>序贯博弈</em>.</p>
+<ul>
+<li>
+<p>同时行动博弈的例子:
+石头剪刀布, 猜数字, 赌大小</p>
+</li>
+<li>
+<p>序贯博弈的例子:
+麻将, 斗地主, 德州扑克</p>
+</li>
+</ul>
+<hr>
+<h1 id="复习">复习</h1>
+<ul>
+<li>描述博弈的三个基本要素: 参与人, 行动集, 效用函数</li>
+<li>完备信息博弈与不完备信息博弈</li>
+<li>同时行动博弈与序贯博弈</li>
+</ul>
+<pre tabindex="0"><code>           信息完备        信息不完备
+同时行动    石头剪刀布         拍卖
+先后行动    围棋              麻将
+</code></pre><hr>
+<!-- raw HTML omitted -->
+<h1 id="博弈论的学科历史">博弈论的学科历史</h1>
+<hr>
+<p><em>学科奠基人:</em> 冯·诺依曼, 约翰·纳什</p>
+<p><em>最早将博弈论运用于社会科学研究:</em> 海萨尼, 谢林, 塞尔腾</p>
+<p><em>将博弈论融入现代经济学:</em> Myerson, Aumann, Hurwiz</p>
+<p>使用博弈论研究 {<em>产业组织</em>, <em>公司金融</em>, <em>宏观经济学</em>, <em>语言学</em>, <em>生物学</em>&hellip;}</p>
+<ul>
+<li>Tirole, Holmstrom, Hart, Rubinsten, &hellip;</li>
+</ul>
+<hr>
+<p><em>学科奠基人:</em> 冯·诺依曼, 约翰·纳什</p>
+<p><em>最早将博弈论运用于社会科学研究:</em> 海萨尼, 谢林, 塞尔腾</p>
+<p><em>将博弈论融入现代经济学:</em> Myerson, Aumann, Hurwiz</p>
+<p>使用博弈论研究 {<em>产业组织</em>, <em>公司金融</em>, <em>宏观经济学</em>, <em>语言学</em>, <em>生物学</em>&hellip;}</p>
+<ul>
+<li>Tirole, Holmstrom, Hart, Rubinsten, &hellip;</li>
+</ul>
+<p>历史的经验证明了, 如果你想得诺贝尔经济学奖, 你应该学好博弈论!</p>
+<hr>
+<!-- raw HTML omitted -->
+<h1 id="策略与策略性行为人">策略与策略性行为人</h1>
+<hr>
+<ul>
+<li>
+<p>博弈论最核心的思想, 在于博弈模型中的行为人<strong>具有策略性</strong>
+(<em>strategic player</em>)</p>
+</li>
+<li>
+<p>这个概念很抽象. 下面我们用三个例子来说明何为<strong>策略性行为人</strong>.</p>
+</li>
+</ul>
+<p>例1: 伦敦奥运会羽毛球丑闻</p>
+<blockquote>
+<p>世界羽毛球联合会8月1日宣布涉伦敦奥运羽毛球赛丑闻的8名运动员被取消比赛资格。 包括一对中国选手和两对韩国选手、一对印尼选手的四对选手在赛场上故意打输引起观众强烈不满。 世界羽联指控这些选手 &ldquo;并没有尽力赢得比赛，她们的表现很明显是损害羽毛球运动。&rdquo;</p>
+</blockquote>
+<hr>
+<p>例2: 田忌赛马, 该成语出自西汉司马迁《史记·孙子吴起列传》</p>
+<blockquote>
+<p>孙子日：‘今以君之下驷与彼上驷，取君上驷与彼中驷，取君中驷与彼下驷。’既驰三辈毕，而田忌一不胜而再胜，卒得王千金。</p>
+</blockquote>
+<hr>
+<p>例3: 教师的真实经历, 国家奖学金评选.</p>
+<hr>
+<p>例3: 教师的真实经历, 国家奖学金评选.</p>
+<p><strong>小结:</strong> 在复杂环境中, 理解行为人的策略需要进行系统地研究.</p>
+<ul>
+<li>作为政策或规则制定者, 学习博弈论可以帮助你设计更科学的规则, 防止出现类似伦敦奥委会的丑闻</li>
+<li>作为博弈参与者, 学习博弈论可以帮助你深入理解博弈规则, 像田忌一样击败对手</li>
+<li>作为经济学专业的学生, 学习博弈论有助于你理解商业社会的竞争现象, 并大大提高你未来得诺贝尔奖的概率
+<ul>
+<li>博弈论在商业竞争中的应用 <a href="https://www.bilibili.com/video/av4412573/">bilibili</a></li>
+</ul>
 </li>
 </ul>
 
