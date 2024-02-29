@@ -8,6 +8,9 @@
 第一章 [PDF](slides/ch1.pdf)
 <!-- [Chapter 1](slides/ch1.md) -->
 
+第二章 [PDF](slides/ch2.pdf)
+
+
 
 ## 其它
 - 去年万老师的教学幻灯片 + 教材 PDF, 供参考.
