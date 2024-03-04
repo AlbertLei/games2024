@@ -5,11 +5,12 @@
 [豆瓣页面](https://book.douban.com/subject/30389848/) 
 
 ## 幻灯片
-第一章 [PDF](slides/ch1.pdf)
+第一章: 博弈论简介+四种基本博弈类型 [PDF](slides/ch1.pdf)
 <!-- [Chapter 1](slides/ch1.md) -->
 
-第二章 [PDF](slides/ch2.pdf)
-
+第二章 
+- 严格劣策略, 重复剔除严格劣策略 [PDF](slides/ch2.pdf)
+- 混合策略, 纳什均衡
 
 
 ## 其它
