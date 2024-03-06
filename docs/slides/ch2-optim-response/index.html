@@ -1,0 +1,309 @@
+<!doctype html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">  
+        <meta charset="utf-8">
+        <title>Games 2024</title>
+        <link rel="stylesheet" href="/pandoc.css">
+    </head>      
+<body>
+  <!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<h1 id="ch2-最优反应-优势策略"><strong>Ch2: 最优反应, 优势策略</strong></h1>
+<h2 id="授课教师-雷浩然">授课教师: <strong>雷浩然</strong></h2>
+<h2 id="湖南大学课程">湖南大学课程</h2>
+<hr>
+<p>上一讲的核心概念: <strong>严格劣势策略</strong> 和 <strong>重复剔除严格劣势策略</strong>(<strong>重复剔除法</strong>).</p>
+<ul>
+<li>严格劣势策略是一类&quot;<em>坏策略</em>&quot;. 理性的参与人<em>永远不会选择严格劣势策略</em>.</li>
+<li>我们可以反复剔除这些&quot;坏策略&quot;, 直至博弈中不存在&quot;坏策略&quot;为止.
+<ul>
+<li>这种方法叫作<strong>重复剔除法</strong>, 它可以用来预测博弈结果 (<strong>&ldquo;重复剔除均衡&rdquo;</strong>).</li>
+<li>对于部分博弈 (如囚徒困境, &ldquo;中间选民定理&rdquo;), 重复剔除法预测的博弈结果是唯一的. 也就是说, 这类博弈存在<em>唯一的</em>重复剔除均衡.</li>
+<li>对于部分博弈, 使用重复剔除法无法得到唯一的预测结果.
+比如, 对于不存在严格劣势策略的博弈 (如约会博弈, 石头剪刀布), 重复剔除法完全不适用.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<p>上一讲的核心概念: <strong>严格劣势策略</strong> 和 <strong>重复剔除严格劣势策略</strong>(<strong>重复剔除法</strong>).</p>
+<ul>
+<li>严格劣势策略是一类&quot;<em>坏策略</em>&quot;. 理性的参与人<em>永远不会选择严格劣势策略</em>.</li>
+<li>我们可以反复剔除这些&quot;坏策略&quot;, 直至博弈中不存在&quot;坏策略&quot;为止.
+<ul>
+<li>这种方法叫作<strong>重复剔除法</strong>, 它可以用来预测博弈结果 (<strong>&ldquo;重复剔除均衡&rdquo;</strong>).</li>
+<li>对于部分博弈 (如囚徒困境, &ldquo;中间选民定理&rdquo;), 重复剔除法预测的博弈结果是唯一的. 也就是说, 这类博弈存在<em>唯一的</em>重复剔除均衡.</li>
+<li>对于部分博弈, 使用重复剔除法无法得到唯一的预测结果.
+比如, 对于不存在严格劣势策略的博弈 (如约会博弈, 石头剪刀布), 重复剔除法完全不适用.</li>
+</ul>
+</li>
+</ul>
+<p>本讲的核心概念: 最优反应, 优势策略. (它们都是某种意义上的&quot;<em>好策略</em>&quot;)</p>
+<hr>
+<h1 id="最优反应">最优反应</h1>
+<p>考虑如下两人同时行动博弈:</p>
+<ul>
+<li>参与人: $N = {1, 2}$</li>
+<li>行动集: $A_1, A_2$</li>
+<li>效用函数: $u_1(a_1, a_2)$, $u_2(a_1,a_2)$</li>
+</ul>
+<hr>
+<h1 id="最优反应-1">最优反应</h1>
+<p>考虑如下同时行动博弈:</p>
+<ul>
+<li>参与人: $N = {1, 2}$</li>
+<li>行动集: $A_1, A_2$</li>
+<li>效用函数: $u_1(a_1, a_2)$, $u_2(a_1,a_2)$</li>
+</ul>
+<p><strong>定义:</strong> 给定参与人2的行动 $a_2$,
+若行动 $a_1^* \in A_1$ 最大化了参与人 $1$ 的效用,
+则称 $a_1^*$ 是对 $a_{2}$ 的<strong>最优反应</strong>.</p>
+<ul>
+<li>例: 给定李四的行动 $a_2 =$ 石头, 张三的最优反应: $a_1^* =$ 布</li>
+</ul>
+<hr>
+<p>对于两人有限博弈 (即可以用一个收益矩阵来描述的博弈), 我们一般用<strong>下划线</strong>来标出参与人的<strong>最优反应</strong>.</p>
+<p><img src="image-2.png" alt="w:800"></p>
+<hr>
+<h1 id="下划线表示最优反应">下划线表示最优反应</h1>
+<p><img src="image-3.png" alt="w:800"></p>
+<hr>
+<h1 id="最优反应-约会博弈">最优反应: 约会博弈</h1>
+<table>
+<thead>
+<tr>
+<th>张三 \ 李四</th>
+<th>网吧</th>
+<th>商场</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>网吧</td>
+<td>$(2,1)$</td>
+<td>$(0,0)$</td>
+</tr>
+<tr>
+<td>商场</td>
+<td>$(0,0)$</td>
+<td>$(1,2)$</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h1 id="最优反应-约会博弈-1">最优反应: 约会博弈</h1>
+<table>
+<thead>
+<tr>
+<th>张三 \ 李四</th>
+<th>网吧</th>
+<th>商场</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>网吧</td>
+<td>$(2,1)$</td>
+<td>$(0,0)$</td>
+</tr>
+<tr>
+<td>商场</td>
+<td>$(0,0)$</td>
+<td>$(1,2)$</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>张三 \ 李四</th>
+<th>网吧</th>
+<th>商场</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>网吧</td>
+<td>$(\underline{\red{2}}, \underline{\red{1}})$</td>
+<td>$(0,0)$</td>
+</tr>
+<tr>
+<td>商场</td>
+<td>$(0,0)$</td>
+<td>$(\underline{\red{1}}, \underline{\red{2}})$</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h1 id="最优反应-数学描述">最优反应: 数学描述</h1>
+<p>给定行为人2的策略 $a_2 \in A_2$,
+若行为人1的策略 ${a_1^<em>} \in A_1$ 满足下列不等式:
+$$
+u_1 (a_1^</em>, a_2) \ge u_1 (a_1, a_2) \quad \forall a_1 \in A_1
+$$
+则称 ${a_1^*}$ 是对 $a_{2}$ 的<strong>最优反应</strong>.</p>
+<ul>
+<li>换言之, ${a_1^<em>}$ 是对 $a_{2}$ 的最优反应, 当且仅当 ${a_1^</em>}$
+是如下优化问题的解:
+$$
+\max_{a_1 \in A_1} u_1 (a_1, a_2)
+$$</li>
+</ul>
+<p>注: 这两个最优反应的定义和前面用文字描述的定义是等价的. 第一个定义是不等式描述,
+第二个定义用到了 <em>最优化 (optimization)</em> 的数学语言.</p>
+<hr>
+<p><strong>练习.</strong> 说明并对比下面两个定义:</p>
+<ol>
+<li>$a_1$ 是张三的<strong>严格劣势策略</strong>.</li>
+<li>针对李四的策略 $a_2$, 张三的<strong>最优反应</strong>是$a_1$.</li>
+</ol>
+<hr>
+<p><strong>练习.</strong> 说明并对比下面两个定义:</p>
+<ol>
+<li>$a_1$ 是张三的<strong>严格劣势策略</strong>.</li>
+<li>针对李四的策略 $a_2$, 张三的<strong>最优反应</strong>是$a_1$.</li>
+</ol>
+<p>第一个定义说的是, 存在某个张三的策略 $a_1&rsquo;$, 使得<em>无论李四采取何种策略</em>,
+$a_1$ 带给张三的效用都<em>严格小于</em> $a_1&rsquo;$  带给张三的效用.</p>
+<p>第二个定义说的是, <em>给定李四的策略 $a_2$</em>, 策略 $a_1$ 最大化了张三的效用.</p>
+<hr>
+<h1 id="判断正误">判断正误</h1>
+<ol>
+<li>如果 $a_1$ 是张三的劣势策略, 那么 $a_1$ 不可能是张三的最优反应.</li>
+</ol>
+<hr>
+<h1 id="判断正误-答案">判断正误: 答案</h1>
+<ol>
+<li>如果 $a_1$ 是张三的劣势策略, 那么 $a_1$ 不可能是张三的最优反应. ❌</li>
+</ol>
+<p>下例中, &ldquo;上&quot;是张三的劣势策略. 给定李四选 &ldquo;左&rdquo;,
+&ldquo;上&quot;是张三的最优反应.</p>
+<pre tabindex="0"><code>张三\李四    左        右
+上          (1,0)    (1,-1) 
+下          (1,1)    (2,-2)
+</code></pre><hr>
+<h1 id="判断正误-1">判断正误</h1>
+<ol start="2">
+<li>如果 $a_1$ 是张三的严格劣势策略, 那么 $a_1$ 不可能是张三的最优反应.</li>
+</ol>
+<hr>
+<h1 id="判断正误-2">判断正误</h1>
+<ol start="2">
+<li>如果 $a_1$ 是张三的严格劣势策略, 那么 $a_1$ 不可能是张三的最优反应. ✅</li>
+</ol>
+<p><strong>证明 (反证法).</strong> 反设存在某个李四的策略 $a_2$, 使得
+$a_1$ 是张三的最优反应. 也就是说,
+$$
+u_1(a_1 , a_2) \ge u_1(\tilde a_1 , a_2) \quad \forall \tilde a_1 \in A_1. \quad\quad  \tag{1}
+$$</p>
+<p>由于 $a_1$ 是张三的严格劣势策略, 存在某个策略 $a_1&rsquo;$ 使得
+$$
+u_1(a_1 , a_2) &lt; u_1(a_1&rsquo; , a_2) \quad\quad  \tag{2}
+$$</p>
+<p>(1)式和(2)式矛盾.</p>
+<hr>
+<h1 id="优势策略">优势策略</h1>
+<p>最优反应是个&quot;好策略&rdquo;, 但它针对的是某个具体的其他行为人的策略.</p>
+<p>如果张三存在某个策略 $a_1^<em>$, 它对于<strong>所有李四可能的行动</strong>都是最优反应.
+我们称满足这个条件的 $a_1^</em>$ 为张三的<strong>优势策略</strong> (dominant strategy).</p>
+<hr>
+<h1 id="优势策略-1">优势策略</h1>
+<p>最优反应是个&quot;好策略&rdquo;, 但它针对的是某个具体的其他行为人的策略.</p>
+<p>如果张三存在某个策略 $a_1^<em>$, 它对于<strong>所有李四可能的行动</strong>都是最优反应.
+我们称满足这个条件的 $a_1^</em>$ 为张三的<strong>优势策略</strong> (dominant strategy).</p>
+<p><strong>定义:</strong> 对于两人博弈, 若存在某个行为人1的策略 $a_1^<em>$, 使得下列不等式对</em>任意 $a_1 \in A_1$ 和 $a_2 \in A_2$* 都成立:
+$$
+u_1(a_1^<em>, a_2) \ge u_1(a_1^</em>, a_2)
+$$
+则称$a_1^*$ 为张三的<strong>优势策略</strong>.</p>
+<hr>
+<h1 id="理解优势策略">理解优势策略</h1>
+<ul>
+<li>
+<p>优势策略是&quot;几乎完美&quot;的策略:</p>
+<ul>
+<li>如果张三存在优势策略 $a_1^<em>$,
+那么张三不用去思考李四的策略或偏好, 也不用去思考李四有没有私人信息或者李四是不是理性的. 张三只用选 $a_1^</em>$ 就行, 因为无论李四最终的选择是什么, $a_1^*$ 都是张三的最优反应.</li>
+</ul>
+</li>
+<li>
+<p>优势策略的例子:</p>
+<ul>
+<li>囚徒困境中选则坦白</li>
+<li>二价拍卖 (我们会在之后的不完备信息博弈中介绍)</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h1 id="优势策略均衡">优势策略均衡</h1>
+<ul>
+<li><strong>优势策略均衡:</strong> 每个参与人都选择他自己的优势策略.
+<ul>
+<li>例: 囚徒困境, (坦白, 坦白)</li>
+</ul>
+</li>
+</ul>
+<pre tabindex="0"><code>张三 \ 李四     坦白             抵赖
+坦白         (−5, −5)         (0, −8)
+抵赖         (−8,  0)         (−1, −1)
+</code></pre><p>(坦白, 坦白) 既是优势策略均衡, 也是重复剔除均衡.</p>
+<hr>
+<h1 id="优势策略均衡-1">优势策略均衡</h1>
+<ul>
+<li><strong>优势策略均衡:</strong> 每个参与人都选择他自己的优势策略.
+<ul>
+<li>例: 囚徒困境, (坦白, 坦白)</li>
+</ul>
+</li>
+</ul>
+<pre tabindex="0"><code>张三 \ 李四     坦白             抵赖
+坦白         (−5, −5)         (0, −8)
+抵赖         (−8,  0)         (−1, −1)
+</code></pre><p>(坦白, 坦白) 既是优势策略均衡, 也是重复剔除均衡.</p>
+<p><strong>命题.</strong> 如果一个策略组合 $(a_1, a_2)$  是<em>优势策略均衡</em>, 那么 $(a_1, a_2)$ 也一定是<em>重复剔除均衡</em>. 反之不真.</p>
+<ul>
+<li>这个命题的证明较复杂. 同学们知道这个命题成立即可.</li>
+</ul>
+<hr>
+<h1 id="从优势策略均衡到纳什均衡">从优势策略均衡到纳什均衡</h1>
+<ul>
+<li>
+<p>优势策略均衡不是普遍存在的.</p>
+<ul>
+<li>比如约会博弈和选民博弈, 行为人都没有优势策略.</li>
+</ul>
+</li>
+<li>
+<p>如果我们不要求策略组合 $(a_1, a_2)$ 中的每个策略都是优势策略,
+只要求 $a_1$ 和 $a_2$ 都是针对其他参与人策略的<em>最优反应</em>, 我们就得到了<strong>纳什均衡</strong>.</p>
+</li>
+<li>
+<p>对于有限博弈 (参与人数量有限, 每个参与人的策略有限), 纳什均衡一定存在.
+(<strong>纳什定理</strong>)</p>
+</li>
+</ul>
+<hr>
+<h2 id="优势策略均衡-subset-重复剔除均衡-subset-纳什均衡">优势策略均衡 $\subset$ 重复剔除均衡 $\subset$ 纳什均衡</h2>
+<h2 id="alt-textimage-7png"><img src="image-7.png" alt="alt text"></h2>
+<hr>
+<h1 id="纳什均衡-nash-1950-和-nash-1951">纳什均衡: Nash (1950) 和 Nash (1951)</h1>
+<p>John Nash (1950): &ldquo;Equilibrium points in $n$-person games&rdquo;</p>
+<ul>
+<li>在这篇论文中, Nash 提出均衡的概念, 并用 <strong>Kakutani 不动点定理</strong>证明了均衡的存在性.</li>
+<li>课程网站提供了论文的 PDF. <em>全文仅一页</em></li>
+<li>后人将这种均衡称为<strong>纳什均衡</strong>, 均衡的存在性定理称为<strong>纳什定理</strong>.</li>
+</ul>
+<p>在随后的一篇更正式的论文中, Nash 给出了一个均衡存在性的简化证明 (主要工具是
+<strong>Brouwer 不动点定理</strong>), 以及纳什均衡在扑克牌游戏中的应用.</p>
+<ul>
+<li>John Nash (1951): &ldquo;Non-cooperative games&rdquo;. 全文十页</li>
+</ul>
+
+</body>
+<footer>
+  <hr/>
+  <p>Back to <a href="/">Index</a></p>
+</footer>
+</html>

@@ -10,10 +10,11 @@
 
 第二章 
 - 严格劣策略, 重复剔除严格劣策略 [PDF](slides/ch2.pdf)
-- 纯策略纳什均衡: 最优反应, 下划线法 [PDF](slides/ch2-nash.pdf)
+- 最优反应, 优势策略 [PDF](slides/ch2-optim-response.pdf)
   - Nash (1950), Equilibrium points in *n*-person games.
     [PDF](slides/nash1950.pdf)
-- 纯策略纳什均衡: 无穷博弈情形 (古诺模型 + 伯特兰模型) [PDF](nash2.pdf)
+- 纯策略纳什均衡 [PDF](slides/ch2-nash.pdf)
+- 纯策略纳什均衡: 无穷博弈情形 (古诺模型 + 伯特兰模型) [PDF](slides/nash2.pdf)
 - 混合策略 [PDF]
 
 
