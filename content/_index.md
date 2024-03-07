@@ -22,4 +22,4 @@
 - 去年万老师的教学幻灯片 + 教材 PDF, 供参考.
 [阿里云盘链接](https://www.alipan.com/s/FiWZEDqBxQy)
 
-- 电影, 美丽心灵, [百度云链接](https://pan.baidu.com/s/19YIEXlqSgDCMMCIj832Y9A?pwd=game) 提取码: game
+- 纳什的人物传记电影, 《美丽心灵》 [百度云链接](https://pan.baidu.com/s/19YIEXlqSgDCMMCIj832Y9A?pwd=game) 提取码: game
