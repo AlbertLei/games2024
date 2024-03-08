@@ -14,8 +14,8 @@
   - Nash (1950), Equilibrium points in *n*-person games.
     [PDF](slides/nash1950.pdf)
 - 纯策略纳什均衡: 下划线法 [PDF](slides/ch2-nash.pdf)
-- 纯策略纳什均衡: 无穷博弈情形 (古诺模型 + 伯特兰模型) [PDF](slides/nash2.pdf)
-- 混合策略 [PDF]
+- 纯策略纳什均衡: 无穷博弈情形 (古诺模型 + 伯特兰模型) [PDF](slides/ch2-infinite.pdf)
+- 混合策略 [PDF](slides/ch2-mixed.pdf)
 
 
 ## 其它
