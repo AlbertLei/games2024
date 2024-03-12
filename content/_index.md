@@ -18,6 +18,9 @@
 - 混合策略 [PDF](slides/ch2-mixed.pdf), 期望效用 [PDF](slides/ch2-EU.pdf)
 
 
+## 作业
+- 作业1 [PDF](notes/hw1.pdf)
+
 ## 其它
 - 去年万老师的教学幻灯片 + 教材 PDF, 供参考.
 [阿里云盘链接](https://www.alipan.com/s/FiWZEDqBxQy)
