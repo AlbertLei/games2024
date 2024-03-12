@@ -1,0 +1,246 @@
+<!doctype html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">  
+        <meta charset="utf-8">
+        <title>Games 2024</title>
+        <link rel="stylesheet" href="/pandoc.css">
+    </head>      
+<body>
+  <!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<h1 id="期望效用"><strong>期望效用</strong></h1>
+<h2 id="授课教师-雷浩然">授课教师: <strong>雷浩然</strong></h2>
+<h2 id="湖南大学课程">湖南大学课程</h2>
+<hr>
+<p>张三是一名湖大学生. 他在上体育课时, 教练给了他如下两个选择:</p>
+<ol>
+<li>
+<p>和教练玩石头剪刀布 (如果平局, 则再玩一局, 直到有人获胜为止):</p>
+<ul>
+<li>若张三赢了, 则不用参加训练</li>
+<li>若张三输了, 则不仅要参加训练, 还要额外跑 2 千米</li>
+</ul>
+</li>
+<li>
+<p>不和教练玩石头剪刀布, 直接训练.</p>
+</li>
+</ol>
+<p>张三是否应该和教练玩剪刀石头布?</p>
+<p>(本问题由<em>邱奥雅</em>同学贡献)</p>
+<hr>
+<ul>
+<li>
+<p>张三的行动集: {<em>玩</em>石头剪刀布, <em>不玩</em>石头剪刀布}</p>
+</li>
+<li>
+<p>所有可能结果:</p>
+<ol>
+<li>&ldquo;<em>不参加训练</em>&rdquo;,</li>
+<li>&ldquo;<em>参加训练</em>&rdquo;,</li>
+<li>&ldquo;<em>参加训练 + 跑2千米</em>&rdquo;</li>
+</ol>
+</li>
+</ul>
+<p>效用:</p>
+<ul>
+<li>记不参加训练效用为 $0$.</li>
+<li>参加训练的效用为 $\blue{-x}$, 其中 $x &gt; 0$</li>
+<li>参加训练并跑 2 千米的效用为 $\blue{-x} \red{-y}$, 其中 $\red{-y}$ 为 <em>跑 2 千米的边际效用</em></li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>行动 &ldquo;不玩&rdquo; 导致的结果是<strong>确定的</strong></p>
+<ul>
+<li>结果一定是&quot;参加训练&quot;.</li>
+<li>$U(不玩) = -x$.</li>
+</ul>
+</li>
+<li>
+<p>行动 &ldquo;玩石头剪刀布&rdquo; 导致的结果是<strong>不确定的</strong>:</p>
+<ul>
+<li>如果张三赢了 (概率 $1/2$), 结果为&quot;不参加训练&quot;. 效用记为 $0$.</li>
+<li>如果张三输了 (概率 $1/2$), 结果为&quot;参加训练并跑2千米.&quot;
+效用为 $-x-y$.</li>
+</ul>
+</li>
+</ul>
+<p>$$
+U(玩) = 1/2 \cdot 0 + 1/2 \cdot (-x-y) = -(x+y)/2
+$$</p>
+<hr>
+<ul>
+<li>
+<p>张三的最优选择是&quot;玩石头剪刀布&quot;当且仅当:
+$$
+U(玩)  \ge U(不玩)
+$$
+$$
+\iff
+-(x+y) /2  \ge -x  \qquad
+$$
+$$
+\iff
+x \ge y \qquad \qquad \quad \qquad
+$$</p>
+</li>
+<li>
+<p>这个结果和我们的直觉一致.</p>
+<ul>
+<li>如果张三非常厌恶参加训练 ($x$ 很大),
+他会愿意&quot;赌一把&quot;, 即使成功率只有 50%.</li>
+<li>如果张三觉得训练完后的额外两公里非常累  ($y$ 很大), 张三不愿意&quot;赌一把&quot;</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h1 id="张三是否应该和教练玩-石头剪刀布">张三是否应该和教练玩 &ldquo;石头剪刀布&rdquo;?</h1>
+<p>是否和教练玩石头剪刀布, 取决于这个&quot;交易&quot;的成本与收益.</p>
+<ul>
+<li>成本: 跑2千米的概率从 0 上升到 0.5, 成本为 $y/2$</li>
+<li>收益: 参加训练的概率从 1 降低到 0.5, 收益为 $x/2$</li>
+</ul>
+<p>如果收益大于成本 ($x/2 \ge y/2$), 张三愿意进行这笔交易.</p>
+<hr>
+<h1 id="混合策略与期望效用">混合策略与期望效用</h1>
+<ul>
+<li>当行为人使用混合策略时, 博弈的最终结果是<strong>不确定的</strong>.</li>
+<li>因此, 行为人的最终效用也是不确定的.</li>
+<li>行为人的期望效用 $=$ 最终效用的<strong>期望</strong></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>$,$</th>
+<th>结果1</th>
+<th>结果2</th>
+<th>结果3</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>最终效用</td>
+<td>$x$</td>
+<td>$y$</td>
+<td>$z$</td>
+</tr>
+<tr>
+<td>概率</td>
+<td>$p_1$</td>
+<td>$p_2$</td>
+<td>$p_3$</td>
+</tr>
+</tbody>
+</table>
+<p>期望效用 $= p_1 x + p_2 y + p_3 z$</p>
+<hr>
+<h1 id="计算期望效用">计算期望效用</h1>
+<table>
+<thead>
+<tr>
+<th>张三\李四</th>
+<th>网吧</th>
+<th>商场</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>网吧</td>
+<td>(2, 1)</td>
+<td>(0, 0)</td>
+</tr>
+<tr>
+<td>商场</td>
+<td>(0, 0)</td>
+<td>(1, 2)</td>
+</tr>
+</tbody>
+</table>
+<p>假设李四的混合策略为 $(q, 1-q)$, 其中 $q$ 为&quot;网吧&quot;的概率</p>
+<ul>
+<li>张三选择纯策略&quot;网吧&quot;的期望收益: $U_{张三}(网吧) = 2q$</li>
+<li>张三选择纯策略&quot;商场&quot;的期望收益: $U_{张三}(商场) = 1-q$</li>
+<li>张三选择混合策略 $(p, 1-p)$ 的期望收益 (其中 $p$ 为&quot;网吧&quot;的概率):
+$$
+p \cdot U(网吧) + (1-p) \cdot U(商场) =  p \cdot 2q + (1-p) (1-q)
+$$</li>
+</ul>
+<hr>
+<h1 id="用无差异原则计算混合策略均衡">用无差异原则计算混合策略均衡</h1>
+<ul>
+<li>记均衡时张三和李四的混合策略分别为 $(\bar p, 1 - \bar p)$ 和 $(\bar q, 1 - \bar q)$</li>
+<li>给定李四的策略, 张三对&quot;网吧&quot;和&quot;商场&quot;无差异:
+$$
+U_{张三}(网吧) = U_{张三}(商场) \implies 2 \bar q = 1 - \bar q \implies \bar q = 1/3
+$$</li>
+<li>给定张三的策略, 李四对&quot;网吧&quot;和&quot;商场&quot;无差异:
+$$
+U_{李四} (网吧) = U_{李四} (商场) \implies \bar p = 2(1 - \bar p) \implies \bar p = 2/3
+$$</li>
+</ul>
+<hr>
+<h1 id="混合策略与严格劣策略">混合策略与严格劣策略</h1>
+<p>定义: 纯策略 $s_1$ 是张三的<strong>严格劣策略</strong>, 若存在另一个策略 $s_1&rsquo;$ 使得下面的不等式对<em>所有李四的行动 $a_2 \in A_2$</em> 都成立:
+$$
+U_1 (s_1, a_2) &gt; U_1 (s_1, a_2) \quad  \red{\forall a_2 \in A_2}
+$$</p>
+<p>注: 这里的 $s_1&rsquo;$ 可以是<strong>混合策略</strong>, $U_1$ 为张三的期望效用函数.</p>
+<hr>
+<h1 id="混合策略与严格劣策略-1">混合策略与严格劣策略</h1>
+<p>定义: 纯策略 $s_1$ 是张三的<strong>严格劣策略</strong>, 若存在另一个策略 $s_1&rsquo;$ 使得下面的不等式对<em>所有李四的行动 $a_2 \in A_2$</em> 都成立:
+$$
+U_1 (s_1, a_2) &gt; U_1 (s_1, a_2) \quad  \red{\forall a_2 \in A_2}
+$$</p>
+<p>证明: &ldquo;下&rdquo; 是张三的严格劣策略.</p>
+<table>
+<thead>
+<tr>
+<th>张三\李四</th>
+<th>L</th>
+<th>R</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>上</td>
+<td>3,1</td>
+<td>0,2</td>
+</tr>
+<tr>
+<td>中</td>
+<td>0,2</td>
+<td>3,3</td>
+</tr>
+<tr>
+<td>下</td>
+<td>1,3</td>
+<td>1,1</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<p>比较张三的下面两个策略:</p>
+<ol>
+<li>纯策略 &ldquo;下&rdquo;: $s_1 = (0, 0, 1)$</li>
+<li>混合策略: $s_1&rsquo; = (0.5, 0.5, 0)$</li>
+</ol>
+<p>若李四选 $L$:
+$$
+U_{张三} (s_1,L) = 1 \quad
+U_{张三} (s_1&rsquo;,L) = 1.5
+$$</p>
+<p>若李四选 $R$:
+$$
+U_{张三} (s_1,R) = 1.5 \quad
+U_{张三} (s_1&rsquo;,R) = 1
+$$</p>
+
+</body>
+<footer>
+  <hr/>
+  <p>Back to <a href="/">Index</a></p>
+</footer>
+</html>
