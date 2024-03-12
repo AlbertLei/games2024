@@ -30,12 +30,12 @@ https://albertlei.github.io/games2024/ 上传课程资料和重要课程信息 �
 若张三赢了, 则不用参加训练 若张三输了, 则不仅要参加训练, 还要额外跑 2 千米 不和教练玩石头剪刀布, 直接训练.
 张三是否应该和教练玩剪刀石头布?
 (本问题由邱奥雅同学贡献)
-张三的行动集: {玩石头剪刀布, 不玩石头剪刀布}
+张三的行动集: {玩石头剪刀布, 不玩石头剪刀布}. To play or not to play?
 所有可能结果:
 &amp;ldquo;不参加训练&amp;rdquo;, &amp;ldquo;参加训练&amp;rdquo;, &amp;ldquo;参加训练 + 跑2千米&amp;rdquo; 效用:
-记不参加训练效用为 $0$. 参加训练的效用为 $\blue{-x}$, 其中 $x &amp;gt; 0$ 参加训练并跑 2 千米的效用为 $\blue{-x} \red{-y}$, 其中 $\red{-y}$ 为 跑 2 千米的边际效用 行动 &amp;ldquo;不玩&amp;rdquo; 导致的结果是确定的
+记不参加训练效用为 $0$. 参加训练的效用为 ${-x}$, 其中 $x &amp;gt; 0$ 参加训练并跑 2 千米的效用为 ${-x} \red{-y}$, 其中 $\red{-y}$ 为 额外跑 2 千米的边际效用 行动 &amp;ldquo;不玩&amp;rdquo; 导致的结果是确定的
 结果一定是&amp;quot;参加训练&amp;quot;. $U(不玩) = -x$. 行动 &amp;ldquo;玩石头剪刀布&amp;rdquo; 导致的结果是不确定的:
-如果张三赢了 (概率 $1/2$), 结果为&amp;quot;不参加训练&amp;quot;. 效用记为 $0$. 如果张三输了 (概率 $1/2$), 结果为&amp;quot;参加训练并跑2千米.</description>
+如果张三赢了 (概率 $1/2$), 结果为&amp;quot;不参加训练&amp;quot;.</description>
     </item>
     
     <item>
