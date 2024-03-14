@@ -21,8 +21,7 @@
 - 作业1 [PDF](notes/hw1.pdf). 截止日期: 3月21日.
 
 ## 博弈论实验
-- 实验1 [PDF](slides/experiment-1.pdf)
-. 课下完成.
+- 实验1 [PDF](slides/experiment-1.pdf). 课下完成.
 
 
 
