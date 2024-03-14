@@ -17,9 +17,14 @@
 - 纯策略纳什均衡: 无穷博弈情形 (古诺模型 + 伯特兰模型) [PDF](slides/ch2-infinite.pdf)
 - 混合策略 [PDF](slides/ch2-mixed.pdf), 期望效用 [PDF](slides/ch2-EU.pdf)
 
-
 ## 作业
-- 作业1 [PDF](notes/hw1.pdf)
+- 作业1 [PDF](notes/hw1.pdf). 截止日期: 3月21日.
+
+## 博弈论实验
+- 实验1 [PDF](slides/experiment-1.pdf)
+. 课下完成.
+
+
 
 ## 其它
 - 去年万老师的教学幻灯片 + 教材 PDF, 供参考.
