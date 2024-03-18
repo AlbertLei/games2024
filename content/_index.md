@@ -5,10 +5,11 @@
 [豆瓣页面](https://book.douban.com/subject/30389848/)
 
 ## 幻灯片
-第一章: 博弈论简介 + 四种基本博弈类型 [PDF](slides/ch1.pdf)
+第一章: 博弈论简介
+- 四种基本博弈类型 [PDF](slides/ch1.pdf)
 <!-- [Chapter 1](slides/ch1.md) -->
 
-第二章
+第二章: 完备信息静态博弈
 - 严格劣策略, 重复剔除严格劣策略 [PDF](slides/ch2.pdf)
 - 最优反应, 优势策略 [PDF](slides/ch2-optim-response.pdf)
   - Nash (1950), Equilibrium points in *n*-person games.
@@ -17,11 +18,16 @@
 - 纯策略纳什均衡: 无穷博弈情形 (古诺模型 + 伯特兰模型) [PDF](slides/ch2-infinite.pdf)
 - 混合策略 [PDF](slides/ch2-mixed.pdf), 期望效用 [PDF](slides/ch2-EU.pdf)
 
+第三章: 完备信息动态博弈
+- 动态博弈简介 (策略, 逆向归纳) [PDF](slides/ch3-intro.pdf)
+
+
 ## 作业
 - 作业1 [PDF](notes/hw1.pdf). 截止日期: 3月21日.
 
 ## 博弈论实验
-- 实验1 [PDF](slides/experiment-1.pdf). 课下完成.
+- 实验1 [PDF](slides/experiment-1.pdf)
+  - [通过这个链接](https://send2me.cn/CdsZT0n1/RRO_SM-yjEeITA)提交你的"猜数字"策略
 
 
 
