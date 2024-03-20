@@ -29,8 +29,6 @@
 - 实验1 [PDF](slides/experiment-1.pdf)
   - [通过这个链接](https://send2me.cn/CdsZT0n1/RRO_SM-yjEeITA)提交你的"猜数字"策略
 
-
-
 ## 其它
 - 去年万老师的教学幻灯片 + 教材 PDF, 供参考.
 [阿里云盘链接](https://www.alipan.com/s/FiWZEDqBxQy)
