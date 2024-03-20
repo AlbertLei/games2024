@@ -1,0 +1,254 @@
+<!doctype html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">  
+        <meta charset="utf-8">
+        <title>Games 2024</title>
+        <link rel="stylesheet" href="/pandoc.css">
+    </head>      
+<body>
+  <!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<h1 id="使用逆向归纳法求解动态博弈"><strong>使用<em>逆向归纳法</em>求解动态博弈</strong></h1>
+<h2 id="授课教师-雷浩然">授课教师: <strong>雷浩然</strong></h2>
+<h2 id="湖南大学课程">湖南大学课程</h2>
+<hr>
+<!-- raw HTML omitted -->
+<h1 id="两阶段讨价还价博弈-bargaining-game">两阶段讨价还价博弈 (bargaining game)</h1>
+<hr>
+<h1 id="例-两阶段讨价还价博弈-bargaining-game">例: 两阶段讨价还价博弈 (bargaining game)</h1>
+<p>张三和李四分 100 元钱. 博弈共有两个阶段:</p>
+<ol>
+<li>
+<p>张三提出分配方案: $(a, 100-a)$, 其中张三拿 $a$, 李四拿 $100-a$.
+李四选择接受或拒绝.</p>
+<ul>
+<li>若李四接受, 博弈结束. 两人效用分别为 $a$ 和 $100-a$.</li>
+<li>若李四拒绝, 博弈进入第二阶段.</li>
+</ul>
+</li>
+<li>
+<p>李四提出分配方案: $(100-b, b)$, 其中李四拿 $b$.</p>
+<ul>
+<li>若张三接受, 博弈结束.  两人效用分别为 $\delta b$ 和 $\delta (100-b)$, 其中 $\delta \in (0,1)$ 表示贴现率.</li>
+<li>若张三拒绝, 则两人按照 $(50,50)$ 的方案均分 100 元, 效用均为 $50 \delta$.</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h1 id="两阶段讨价还价博弈-逆向归纳法">两阶段讨价还价博弈: 逆向归纳法</h1>
+<ul>
+<li>如果博弈进入第二阶段, 李四不会选择 $b&lt;50$. 否则他最终分到的钱会低于50.</li>
+<li>李四会选择 $b \ge 50$. 第二阶段的分配结果一定为 $(50,50)$,
+两人效用均为 $50 \delta$.</li>
+</ul>
+<p>问: 如何进一步反推张三在第一阶段的最优行动 $a$?</p>
+<hr>
+<h1 id="两阶段讨价还价博弈-逆向归纳法-1">两阶段讨价还价博弈: 逆向归纳法</h1>
+<ul>
+<li>
+<p>如果博弈进入第二阶段, 李四不会选择 $b&lt;50$. 否则他最终分到的钱会低于50.</p>
+</li>
+<li>
+<p>李四会选择 $b \ge 50$. 第二阶段的分配结果一定为 $(50,50)$,
+两人效用均为 $50 \delta$.</p>
+</li>
+<li>
+<p>张三会选择 $a^* = 100- 50 \delta$, 即留给李四 $50 \delta$.</p>
+<ul>
+<li>李四对于接受和拒绝<strong>是无差异的</strong>.</li>
+</ul>
+</li>
+<li>
+<p>任何 $a \ne  100- 50 \delta$ 都不会是均衡结果!</p>
+<ul>
+<li>若 $a &gt; 100- 50 \delta$, 李四会选择拒绝, 博弈进入第二阶段.</li>
+<li>若 $a &lt; 100- 50 \delta$, 张三可以再提高一点点 $a$, 并且李四不会拒绝.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<p>综上, 根据逆向归纳,
+两阶段讨价还价博弈的均衡结果为:
+$$
+a^* = 100- 50 \delta, 李四在第一阶段选择\red{接受}
+$$</p>
+<ul>
+<li>注: 尽管此时李四对接受和拒绝是无差异的, 但在均衡中他必须选择接受. 否则, 张三的行为不再是最优反应.</li>
+</ul>
+<hr>
+<p>综上, 根据逆向归纳,
+两阶段讨价还价博弈的均衡结果为:
+$$
+a^* = 100- 50 \delta, 李四在第一阶段选择\red{接受}
+$$</p>
+<ul>
+<li>注: 尽管此时李四对接受和拒绝是无差异的, 但在均衡中他必须选择接受. 否则, 张三的行为不再是最优反应.</li>
+</ul>
+<p>均衡结果中, 张三的收益 $100 - 50 \delta$ 大于李四的收益 $50 \delta$.</p>
+<ul>
+<li>张三制定第一阶段的分配方案, 具有&quot;先手优势&quot;.</li>
+<li>&ldquo;先手优势&quot;存在的原因:
+<ul>
+<li>李四并不想拖入第二阶段, 否则李四的效用会按照 $\delta$ 的比例进行折旧.</li>
+<li>张三知道这一点, 因此可以在第一阶段逼迫李四接受并不完全公平的分配方案.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h1 id="patience-is-power">Patience is power</h1>
+<ul>
+<li>
+<p>一般认为, $\delta$ 衡量行为人的 <em>耐心</em>程度 (<em>patience</em>), 或<em>意志力</em>程度(<em>willpower</em>).</p>
+<ul>
+<li>从效用的角度来看, 明天的 $100$ 块巧克力等价于今天的 $100 \delta$ 块巧克力.</li>
+<li>意志力强的人, $\delta$ 也会更高.</li>
+<li>如果行为人具有<em>完美意志力</em>,
+他会对明天的 $100$ 块巧克力和今天的 $100$ 块巧克力无差异. 此时, $\red{\delta = 1}$.</li>
+</ul>
+</li>
+<li>
+<p>均衡结果中, 李四的收益为 $50 \delta$. 他的均衡收益随着意志力(或耐心)的上升而上升.</p>
+<ul>
+<li>如果李四具有完美意志力 ($\delta = 1$), 就能免于张三的剥削!</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h1 id="延迟满足-delayed-gratification"><em>延迟满足 (Delayed gratification)</em></h1>
+<p><em>延迟满足</em>能力, 指为了更有价值的<strong>长远结果</strong>而放弃<strong>即时满足</strong>. (心理学概念)</p>
+<blockquote>
+<p>Delayed gratification means resisting the temptation of an immediate reward, in anticipation that there will be a greater reward later.</p>
+</blockquote>
+<p>如何训练自己<em>延迟满足</em>的能力?</p>
+<ul>
+<li>有意识地感知到自己会倾向于及时满足, 并愿意为了长远目标而作出改变, 就迈出了提高延迟满足能力的第一步.</li>
+<li>使用延迟满足会消耗你的<em>意志力</em> (willpower). 意志力是一种稀缺资源.
+当觉得自己意志力低下时, 应该有意识地回避充满诱惑的环境, 并<strong>策略性地使用自己有限的意志力.</strong></li>
+</ul>
+<hr>
+<p><strong>练习:</strong> 阅读教材 P94, 自行求解这个&quot;三期讨价还价博弈&quot;的逆向归纳解, 并和教材的答案进行比较.</p>
+<hr>
+<!-- raw HTML omitted -->
+<h1 id="劳资博弈">劳资博弈</h1>
+<hr>
+<h1 id="博弈模型设定">博弈模型设定</h1>
+<p><strong>参与人:</strong> 工会和厂商</p>
+<p><strong>行动集:</strong> 工会决定工资 $W \in [0,\infty)$,
+厂商决定雇佣人数 $L \in [0,\infty)$.</p>
+<p><strong>两阶段博弈:</strong></p>
+<ol>
+<li>工会选择工资 $W$</li>
+<li>厂商选择雇佣人数 $L$</li>
+</ol>
+<hr>
+<h1 id="效用函数">效用函数</h1>
+<ul>
+<li>
+<p>工会效用: $u(W, L)$, $u$ 关于 $W$ 和 $L$ 均递增.</p>
+</li>
+<li>
+<p>厂商利润: $\pi (W, L) = \blue{R(L)} - \red{WL}$, 其中 $\blue{R(L)}$ 为<strong>产出</strong>,
+$\red{WL}$ 为<em>雇佣成本</em>.</p>
+</li>
+<li>
+<p>假设 $R(L)$是<em>严格递增</em>的<em>严格凹</em>函数:</p>
+<ul>
+<li>$R&rsquo;(L) &gt; 0$,   $R&rsquo;&rsquo;(L) &lt; 0$, 且 $R(0) = 0$.</li>
+</ul>
+</li>
+<li>
+<p>数值例子:</p>
+<ul>
+<li>$u(W, L) = W^{0.5} L^{0.5}$</li>
+<li>$R(L) = 5L - L^2$  for $L \in [0,2.5]$.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h1 id="逆向归纳-第二阶段">逆向归纳: 第二阶段</h1>
+<p>厂商观察到工会选择的工资 $W$ 后, 解决如下最优化问题:
+$$
+\max_{L} \blue{R(L)} - \red{WL}
+$$
+一阶条件:
+$$
+R&rsquo;(L) = W \implies 5-2L =W   \quad (*)
+$$</p>
+<ul>
+<li>方程 $(<em>)$ 决定了厂商的雇佣策略: $L^</em>(W) = (5-W)/2$.</li>
+</ul>
+<hr>
+<h1 id="逆向归纳-第一阶段">逆向归纳: 第一阶段</h1>
+<ul>
+<li>
+<p>给定厂商的雇佣策略 $L^<em>(W) = (5-W)/2$, 工会的最优化问题如下:
+$$
+\max_{W} u(W, L^</em>(W)) = W^{0.5} (\frac{5-W}{2})^{0.5}
+$$</p>
+</li>
+<li>
+<p>这个最优化问题的解为: $W^* = 2.5$.</p>
+</li>
+</ul>
+<hr>
+<h1 id="劳资博弈-均衡与均衡结果">劳资博弈: 均衡与均衡结果</h1>
+<p>均衡:</p>
+<ul>
+<li>工会策略: $W^* = 2.5$</li>
+<li>厂商策略: $L^*(W) = (5-W)/2$</li>
+</ul>
+<p>均衡结果:</p>
+<ul>
+<li>工会的行动为 $W^* = 2.5$</li>
+<li>厂商的行动为 $L^*(2.5) = 5/4$</li>
+</ul>
+<hr>
+<!-- raw HTML omitted -->
+<h1 id="委托代理博弈">委托代理博弈</h1>
+<hr>
+<hr>
+<h1 id="从逆向归纳到子博弈精炼">从<em>逆向归纳</em>到<em>子博弈精炼</em></h1>
+<ul>
+<li>
+<p>目前为止, 我们主要分析了<strong>两阶段动态博弈</strong>的例子.
+我们使用的求解方法 (<strong>逆向归纳</strong>) 可以推广到<em>任意有限期</em>动态博弈.</p>
+</li>
+<li>
+<p>逆向归纳法对<em>无穷期博弈</em>不适用 (无穷期博弈的例子见教材 P96)</p>
+<ul>
+<li>原因: 逆向归纳法的分析起点是博弈的最后一期, 然后再进一步倒推之前的均衡结果. 但是, <em>无穷期博弈不存在最后一期</em>. 因此, 逆向归纳法不适用.</li>
+</ul>
+</li>
+<li>
+<p>对于无穷期博弈, 只能使用<strong>子博弈精炼</strong>的方法 (下一讲介绍)</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>尽管<strong>子博弈精炼法</strong>比<strong>逆向归纳法</strong>适用范围更广,
+但它的优势主要体现在无穷期博弈.</p>
+<ul>
+<li>我们这门课程几乎不会涉及到无穷期博弈, 教材 P96 给了一个相对简单的无穷期博弈例子, 但教材给的解答并不严格.</li>
+<li>无穷期博弈的求解较难, 需要使用特定的数学工具.</li>
+</ul>
+</li>
+<li>
+<p>对于有限期博弈, <strong>逆向归纳法</strong>和<strong>子博弈精炼</strong> &ldquo;几乎&quot;是等价的.
+并且, <strong>逆向归纳法</strong>比<strong>子博弈精炼</strong>更容易理解.</p>
+</li>
+<li>
+<p><em>因此, 我们重点掌握逆向归纳法.</em>
+教材中本章涉及的所有博弈例子 (斯塔克博格模型, 劳资博弈, 讨价还价博弈, 委托-代理博弈等) 都可以用逆向归纳法求解.</p>
+</li>
+</ul>
+
+</body>
+<footer>
+  <hr/>
+  <p>Back to <a href="/">Index</a></p>
+</footer>
+</html>
