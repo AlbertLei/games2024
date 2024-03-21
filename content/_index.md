@@ -23,7 +23,7 @@
 - 逆向归纳法: 讨价还价博弈+劳资博弈 [PDF](slides/ch3-examples.pdf)
 
 ## 作业
-- 作业1 [PDF](notes/hw1.pdf). 截止日期: 3月21日.
+- 作业1 [PDF](notes/hw1.pdf). 答案 [PDF](notes/hw1-ans.pdf)
 
 ## 博弈论实验
 - 实验1 [PDF](slides/experiment-1.pdf)
