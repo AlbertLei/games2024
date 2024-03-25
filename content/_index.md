@@ -21,6 +21,8 @@
 第三章: 完备信息动态博弈
 - 动态博弈简介 (策略, 逆向归纳) [PDF](slides/ch3-intro.pdf)
 - 逆向归纳法: 讨价还价博弈+劳资博弈 [PDF](slides/ch3-examples.pdf)
+- 博弈树, 子博弈完美纳什均衡 [PDF](slides/ch3-tree.pdf)
+
 
 
 
