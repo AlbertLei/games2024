@@ -22,6 +22,8 @@
 - 动态博弈简介 (策略, 逆向归纳) [PDF](slides/ch3-intro.pdf)
 - 逆向归纳法: 讨价还价博弈+劳资博弈 [PDF](slides/ch3-examples.pdf)
 
+
+
 ## 作业
 - 作业1 [PDF](notes/hw1.pdf). 答案 [PDF](notes/hw1-ans.pdf)
 
